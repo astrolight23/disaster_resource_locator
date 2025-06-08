@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: disaster-resource-server
+    env: node
+    plan: free
+    branch: main
+    rootDir: .
+    buildCommand: npm install
+    startCommand: npm start
